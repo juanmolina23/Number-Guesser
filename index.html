@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/style.css" />
+		<title>Number Guesser</title>
+	</head>
+	<body>
+		<h1>Number Guesser!</h1>
+
+		<div class="round-container">
+			<h2 id="round-count">Round 1</h2>
+			<p id="message">Game Message: Good luck!</p>
+		</div>
+		<div id="game-container" class="game-container">
+			<div id="computer">
+				<h5>Computer</h5>
+				<p id="computer-score">Score: 0</p>
+				<p id="computer-guess">?</p>
+			</div>
+
+			<div id="user">
+				<h5>You</h5>
+				<p id="user-score">Score: 0</p>
+				<p id="user-input"></p>
+				<div id="input-buttons">
+					<button id="minus">-</button>
+					<button id="plus">+</button>
+				</div>
+
+				<button id="make-guess">Make a Guess</button>
+			</div>
+		</div>
+		<div id="next-round-container">
+			<button id="next-round">Next Round</button>
+		</div>
+
+		<footer>
+			<div id="step-1">
+				<h5 class="footer-heading">Step 1</h5>
+				<p class="footer-p">Input a number between 0 and 9</p>
+			</div>
+			<div id="step-2">
+				<h5 class="footer-heading">Step 2</h5>
+				<p class="footer-p">
+					Click "Make a Guess" to submit your guess and see who won the round.
+				</p>
+			</div>
+			<div id="step-3">
+				<h5 class="footer-heading">Step 3</h5>
+				<p class="footer-p">Click "Next Round" to play again.</p>
+			</div>
+		</footer>
+		<script src="/script.js"></script>
+	</body>
+</html>
